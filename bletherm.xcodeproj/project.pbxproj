@@ -14,6 +14,8 @@
 		4986D897240D5B1C008C7CB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4986D895240D5B1C008C7CB1 /* Main.storyboard */; };
 		4986D8A3240D5B1C008C7CB1 /* blethermTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986D8A2240D5B1C008C7CB1 /* blethermTests.swift */; };
 		4986D8AE240D5B1C008C7CB1 /* blethermUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986D8AD240D5B1C008C7CB1 /* blethermUITests.swift */; };
+		4986D8BD240D5B8B008C7CB1 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4986D8BC240D5B8B008C7CB1 /* CoreBluetooth.framework */; };
+		4986D8C1240D66ED008C7CB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4986D8C3240D66ED008C7CB1 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		4986D8A9240D5B1C008C7CB1 /* blethermUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blethermUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4986D8AD240D5B1C008C7CB1 /* blethermUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blethermUITests.swift; sourceTree = "<group>"; };
 		4986D8AF240D5B1C008C7CB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4986D8BC240D5B8B008C7CB1 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		4986D8C2240D66ED008C7CB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4986D8BD240D5B8B008C7CB1 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,10 +83,12 @@
 		4986D880240D5B19008C7CB1 = {
 			isa = PBXGroup;
 			children = (
+				4986D8C3240D66ED008C7CB1 /* InfoPlist.strings */,
 				4986D88B240D5B19008C7CB1 /* bletherm */,
 				4986D8A1240D5B1C008C7CB1 /* blethermTests */,
 				4986D8AC240D5B1C008C7CB1 /* blethermUITests */,
 				4986D88A240D5B19008C7CB1 /* Products */,
+				4986D8BB240D5B8B008C7CB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +140,14 @@
 				4986D8AF240D5B1C008C7CB1 /* Info.plist */,
 			);
 			path = blethermUITests;
+			sourceTree = "<group>";
+		};
+		4986D8BB240D5B8B008C7CB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4986D8BC240D5B8B008C7CB1 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +214,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = "Bas Peters";
+				ORGANIZATIONNAME = Computabilis;
 				TargetAttributes = {
 					4986D888240D5B19008C7CB1 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -240,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4986D897240D5B1C008C7CB1 /* Main.storyboard in Resources */,
+				4986D8C1240D66ED008C7CB1 /* InfoPlist.strings in Resources */,
 				4986D894240D5B1C008C7CB1 /* Preview Assets.xcassets in Resources */,
 				4986D891240D5B1C008C7CB1 /* Assets.xcassets in Resources */,
 			);
@@ -311,6 +327,14 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
+		4986D8C3240D66ED008C7CB1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4986D8C2240D66ED008C7CB1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -368,6 +392,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Xiaomi Temperature";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -421,6 +446,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "Xiaomi Temperature";
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";

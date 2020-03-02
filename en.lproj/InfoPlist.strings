@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  bletherm
+
+  Created by Bas Peters on 02/03/2020.
+  Copyright © 2020 Computabilis. All rights reserved.
+*/
+/* Localized Bundle Display Name */
+"CFBundleDisplayName" = "Xiaomi Temperature";
