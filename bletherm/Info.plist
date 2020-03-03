@@ -44,7 +44,7 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Digital7.ttf</string>
+		<string>LCD.ttf</string>
 	</array>
 </dict>
 </plist>
