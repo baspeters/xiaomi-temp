@@ -11,6 +11,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Text("Hello, World!")
+            .font(.custom("Digital7", size: 48))
             .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }

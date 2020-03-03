@@ -16,6 +16,7 @@
 		4986D8AE240D5B1C008C7CB1 /* blethermUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986D8AD240D5B1C008C7CB1 /* blethermUITests.swift */; };
 		4986D8BD240D5B8B008C7CB1 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4986D8BC240D5B8B008C7CB1 /* CoreBluetooth.framework */; };
 		4986D8C1240D66ED008C7CB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4986D8C3240D66ED008C7CB1 /* InfoPlist.strings */; };
+		49F0EB1E240E6508009655BF /* Digital7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49F0EB1D240E6508009655BF /* Digital7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		4986D8AF240D5B1C008C7CB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4986D8BC240D5B8B008C7CB1 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		4986D8C2240D66ED008C7CB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		49F0EB1D240E6508009655BF /* Digital7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Digital7.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +85,6 @@
 		4986D880240D5B19008C7CB1 = {
 			isa = PBXGroup;
 			children = (
-				4986D8C3240D66ED008C7CB1 /* InfoPlist.strings */,
 				4986D88B240D5B19008C7CB1 /* bletherm */,
 				4986D8A1240D5B1C008C7CB1 /* blethermTests */,
 				4986D8AC240D5B1C008C7CB1 /* blethermUITests */,
@@ -105,12 +106,14 @@
 		4986D88B240D5B19008C7CB1 /* bletherm */ = {
 			isa = PBXGroup;
 			children = (
+				4986D8C3240D66ED008C7CB1 /* InfoPlist.strings */,
 				4986D88C240D5B19008C7CB1 /* AppDelegate.swift */,
 				4986D88E240D5B19008C7CB1 /* ContentView.swift */,
 				4986D890240D5B1C008C7CB1 /* Assets.xcassets */,
 				4986D895240D5B1C008C7CB1 /* Main.storyboard */,
 				4986D898240D5B1C008C7CB1 /* Info.plist */,
 				4986D899240D5B1C008C7CB1 /* bletherm.entitlements */,
+				4986D8C6240E5013008C7CB1 /* Fonts */,
 				4986D892240D5B1C008C7CB1 /* Preview Content */,
 			);
 			path = bletherm;
@@ -148,6 +151,14 @@
 				4986D8BC240D5B8B008C7CB1 /* CoreBluetooth.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4986D8C6240E5013008C7CB1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				49F0EB1D240E6508009655BF /* Digital7.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 				4986D8C1240D66ED008C7CB1 /* InfoPlist.strings in Resources */,
 				4986D894240D5B1C008C7CB1 /* Preview Assets.xcassets in Resources */,
 				4986D891240D5B1C008C7CB1 /* Assets.xcassets in Resources */,
+				49F0EB1E240E6508009655BF /* Digital7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
